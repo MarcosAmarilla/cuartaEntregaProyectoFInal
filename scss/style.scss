@@ -19,6 +19,10 @@ li{
     font-family: 'Playfair Display', serif;
 }    
 
+a{
+    text-decoration: none;
+}
+
 footer{
     background-color: rgb(247, 241, 241);
     margin-top: 60px;
@@ -29,6 +33,7 @@ footer{
 section{
     background: rgba(0,0,0,.4);
     color: #fff;
+    font-size: 1.1rem;
     section div{
         border: groove;
         margin-top: 15px;
@@ -40,6 +45,8 @@ section{
 
 .textoCentrado{
     text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .navbar-logo{
