@@ -10,8 +10,7 @@ body {
 
 ul {
   list-style-type: none;
-  display: flex;
-  background-color: #f7f1f1; }
+  display: flex; }
 
 li {
   font-family: 'Playfair Display', serif; }
@@ -66,9 +65,7 @@ section {
   margin: auto; }
 
 .contenedor {
-  height: 0px;
-  width: 100%;
-  max-width: 560px;
+  overflow: hidden;
   padding-top: 56.25%;
   position: relative; }
   .contenedor iframe {
