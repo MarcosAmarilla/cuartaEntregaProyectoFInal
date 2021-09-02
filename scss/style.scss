@@ -103,6 +103,13 @@ section{
     padding-bottom: 25px;
 }    
 
+@media only screen and (max-width:377px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width:600px){
     #contenedorVideo{
         grid-template-columns: 100%;
