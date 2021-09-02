@@ -53,43 +53,121 @@
             <section>
                 <h1 class="textoCentrado">Opinión</h1>
                 <form action="">
-                    Ingrese su nombre <input type="text">
-                    <br>
-                    Ingrese su email <input type="email">
-                    <br>
-                    <div>
-                        <h2 class="textoCentrado">Elija el mejor gol</h2>
-                        <input type="radio" name="mejorGol" value="gol1"> Gol de Klusener
-                        <input type="radio" name="mejorGol" value="gol2"> Gol de Bieler
-                        <input type="radio" name="mejorGol" value="gol3"> Gol de Alegre
-                        <input type="radio" name="mejorGol" value="gol4"> Gol de Diz
-                        <input type="radio" name="mejorGol" value="gol5"> Gol de Cauteruccio
-                        <input type="radio" name="mejorGol" value="gol6"> Gol de Lema
-                    </div>
-                    <div>
-                        <h2 class="textoCentrado">Elija el/los ídolos de su preferencia</h2>
-                        Rodrigo "Chapu" Braña <input type="checkbox">
-                        Miguel "Chino" Caneo<input type="checkbox">
-                        Ubaldo Matildo "El Pato" Fillol <input type="checkbox">
-                        Jorge Gaspari <input type="checkbox">
-                        Sebastian "Chirola" Romero <input type="checkbox">
-                        Nelson David Vivas <input type="checkbox">
-                    </div>    
-                    <div>
-                    <fieldset>
-                        <legend>Cual es Sección Preferida</legend>
-                            <select name="" id="">
-                                <option value="">Pagina Principal</option>
-                                <option value="">Goles</option>
-                                <option value="">Idolos</option>
-                                <option value="">Campeonatos</option>
-                            </select>
-                    </fieldset>
-                    </div>
-                    <div class="botones">
-                        <input type="reset">
-                        <input type="submit">
-                    </div>    
+                    <form>
+                        <div class="form-group row separadorForm">
+                            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                                <input type="nombre" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            </div>
+                        </div>
+                        <div class="form-group row separadorForm">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo Electrónico">
+                            </div>
+                        </div>
+                        <fieldset class="form-group separadorForm">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Mejor gol?</legend>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="goles" id="gol1" value="option1" checked>
+                                        <label class="form-check-label" for="gol1">
+                                            Gol de Klusener
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="goles" id="gol2" value="option2">
+                                    <label class="form-check-label" for="gol2">
+                                        Gol de Bieler
+                                    </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="goles" id="gol3" value="option3">
+                                        <label class="form-check-label" for="gol3">
+                                            Gol de Alegre
+                                        </label>
+                                    </div>
+                                </div>   
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="goles" id="gol4" value="option4">
+                                        <label class="form-check-label" for="gol4">
+                                            Gol de Diz
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="goles" id="gol5" value="option5">
+                      <label class="form-check-label" for="gol5">
+                        Gol de Cauteruccio
+                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="goles" id="gol6" value="option6">
+                                        <label class="form-check-label" for="gol6">
+                                            Gol de Lema
+                                        </label>
+                                    </div>
+                                </div> 
+                            </div>
+                        </fieldset>
+                        <div class="form-group row separadorForm">
+                            <div class="col-sm-2">Cual es su idolo preferido</div>
+                            <div class="col-sm-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brana">
+                                    <label class="form-check-label" for="brana">
+                                        Rodrigo "Chapu" Braña 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="caneo">
+                                    <label class="form-check-label" for="caneo">
+                                        Miguel "Chino" Caneo 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="fillol">
+                                    <label class="form-check-label" for="fillol">
+                                        "El Pato" Fillol 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gaspari">
+                                    <label class="form-check-label" for="gaspari">
+                                        Jorge Gaspari 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="romero">
+                                    <label class="form-check-label" for="romero">
+                                        Sebastian "Chirola" Romero 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="vivas">
+                                    <label class="form-check-label" for="vivas">
+                                        Nelson David Vivas 
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <select class="custom-select separadorForm">
+                            <option selected>Cual es la mejor Sección</option>
+                            <option value="1">Página Principal</option>
+                            <option value="2">Goles</option>
+                            <option value="3">Idolos</option>
+                            <option value="4">Campeonatos</option>
+                        </select>
+                        <div class="form-group row separadorForm">
+                            <div class="col-sm-12">
+                                <button type="reset" class="btn btn-primary">Limpiar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
                 </form>
             </section>
         </main>

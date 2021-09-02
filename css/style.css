@@ -19,10 +19,14 @@ a {
   text-decoration: none; }
 
 footer {
+  display: flex;
+  margin: 31px;
   background-color: #f7f1f1;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  justify-content: flex-end;
   align-content: space-between; }
+
+main {
+  margin-bottom: 30px; }
 
 section {
   background: rgba(0, 0, 0, 0.4);
@@ -75,11 +79,9 @@ section {
     top: 0px;
     left: 0px; }
 
-.botones {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  border: hidden; }
+.separadorForm {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 #contenedorVideo {
   display: grid;
